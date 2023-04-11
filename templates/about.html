@@ -1,0 +1,117 @@
+
+{% extends 'Navbar.html' %}
+
+{% block title %}About{% endblock %}
+
+
+
+{% block body %}
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Each and every piece – right from the lighting to the curios to the furnishings – has been carefully hand-picked, and passed through the fine sieve that is my design sensibility and aesthetic. I have had the great opportunity to travel around the world, and it has onlyexpanded my understanding of diversity in concepts – so, whether it is moods, seasons,colours, or conversations, my exposure over time has helped develop my lens through which I assess objects, rooms, and spaces.</p>
+  <p>A result of young and creative energies coming together, you are set to experience a range of curated pieces in the plane of flooring, décor, accessories, and rugs, as well as the occasional features from Paris and New York.</p>
+
+</div>
+
+<style>
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+     width: 100%;
+    display: block;
+  }
+}
+</style>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>TEENA</h2>
+        <p class="title">CEO & Founder</p>
+        <p>teenachowdary@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>YAMINI</h2>
+        <p class="title">Designer</p>
+        <p>yamini@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+

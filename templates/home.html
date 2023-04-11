@@ -1,0 +1,49 @@
+{% extends 'Navbar.html' %}
+
+{% block title %}Home{% endblock %}
+
+
+
+{% block body %}
+
+<div class="container" align="center">
+ <h1>Home Page - Welcome to COZY</h1>
+
+<h3>{{data}}</h3>
+
+</div>
+<br><br>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+     <img class="card-img-top" src="static/images/fur1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">FURNITURES</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <center><a href="#" class="btn btn-primary">Explore</a></center>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+     <img class="card-img-top" src="static/images/fur2.jpg" alt="Card image cap" height="260">
+      <div class="card-body">
+        <h5 class="card-title">AESTHATICS</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <center><a href="#" class="btn btn-primary">Explore</a></center>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-4">
+    <div class="card">
+     <img class="card-img-top" src="static/images/fur3.png" alt="Card image cap" height="260">
+      <div class="card-body">
+        <h5 class="card-title">MANAGE YOUR SPACE</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <center><a href="#" class="btn btn-primary">Explore</a></center>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
